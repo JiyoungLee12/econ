@@ -45,12 +45,12 @@
             margin-bottom: 15px;
         }
 
-        /* 연락처(이메일) 영역 스타일 */
+        /* 연락처(이메일) 영역 스타일 (왼쪽 정렬) */
         .contact-info {
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 8px;
             font-size: 14px;
             color: #333;
@@ -62,11 +62,11 @@
             flex-shrink: 0;
         }
 
-        /* 소셜 아이콘 영역 (LinkedIn, Twitter) */
+        /* 소셜 아이콘 영역 (왼쪽 정렬) */
         .social-icons {
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 15px;
             margin-bottom: 25px;
         }
@@ -100,6 +100,8 @@
             list-style: none;
             padding: 0;
             margin-top: auto;
+            width: 100%;
+            text-align: left;
         }
 
         .nav-links li {
@@ -227,7 +229,7 @@
     <!-- 왼쪽 고정 영역 -->
     <div class="sidebar">
         <img src="jiyoung_photo.png" alt="Jiyoung Lee" class="profile-img">
-        <div class="name">Jiyoung Lee</div>
+        <div class="name" style="width: 100%; text-align: left;">Jiyoung Lee</div>
 
         <div class="affiliation">
             <span class="affiliation-line">
@@ -238,19 +240,18 @@
             </span>
         </div>
 
-                <!-- 이메일 아이콘 + 텍스트 (링크 없음) -->
+                <!-- 이메일 아이콘 + 텍스트 (왼쪽 정렬) -->
         <div class="contact-info">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             <span>jylee269@uw.edu</span>
         </div>
 
-        <!-- 소셜 아이콘 영역 (LinkedIn, Twitter 나란히) -->
+        <!-- 소셜 아이콘 영역 (LinkedIn, Twitter 왼쪽 정렬) -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/jiyounglee269" target="_blank" title="LinkedIn">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
-            <!-- Twitter(X) 아이콘 추가 -->
-            <a href="https://x.com/JiyoungLee__" target="_blank" title="Twitter">
+            <a href="https://twitter.com/JiyoungLee__" target="_blank" title="Twitter">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
             </a>
         </div>
@@ -284,12 +285,12 @@
         <div class="paper-meta">
             <strong>Presentations:</strong><br>
             • <a href="https://www.kielinstitut.de/fileadmin/Dateiverwaltung/Events/_texte_other_events/invito-IEP-CEPR-KIEL10JUNE2026-3.pdf" target="_blank">CEPR-Kiel-Bocconi Best Paper Award Finalist: 2nd Junior Workshop in Geoeconomics (Bocconi University)</a><br>
-            • <a href="https://virtual.oxfordabstracts.com/event/76093/program?date=%222026-7-7%22&g_session=188638" target="_blank">2026 Royal Economic Society (University of Newcastle)</a><br>
+            • <a href="https://virtual.oxfordabstracts.com/event/76093/program?date=%222026-7-7%22&g_session=188638" target="_blank">2026 Royal Economic Society Annual Conference (University of Newcastle)</a><br>
             • <a href="https://editorialexpress.com/conference/CefESConf2026/program/CefESConf2026.html#26" target="_blank">The 8th Annual CefES Conference (ETH Zürich)</a><br>
-            • <span>The 3rd Workshop of the East and South-East Asian Macroeconomic Society (HKUST, Scheduled)</span><br>
+            • <span>The 3rd Workshop of the East and South-East Asian Macroeconomic Society (HKUST, scheduled)</span><br>
         
-           <strong>Award:</strong><br>
-           • <a href="https://res.org.uk/event-listing/res-2026-annual-conference/scholars-fund/" target="_blank">RES 2026 Annual Conference: Scholars Fund — Rated Excellent by Committee, Royal Economic Society</a> <br>
+           <strong>Awards:</strong><br>
+           • <a href="https://res.org.uk/event-listing/res-2026-annual-conference/scholars-fund/" target="_blank">RES 2026 Annual Conference: Scholars Fund — Rated Excellent by the Committee, Royal Economic Society</a> <br>
            • <span>Henry T. Buechel Memorial Fellowship, University of Washington</span><br>
         </div>
 
