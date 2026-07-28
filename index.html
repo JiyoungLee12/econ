@@ -35,6 +35,7 @@
             align-items: center;
             text-align: center;
             overflow-y: auto;
+            flex-shrink: 0;
         }
 
         .profile-img {
@@ -106,14 +107,14 @@
         .nav-links {
             list-style: none;
             padding: 0;
-            margin-top: auto; /* 아래쪽으로 밀어냄 */
+            margin-top: auto;
             margin-bottom: 10px;
             width: 100%;
             text-align: left;
         }
 
         .nav-links li {
-            margin-bottom: 4px; /* 목차 항목 사이 간격을 좁게 수정 */
+            margin-bottom: 4px;
         }
 
         .nav-links a {
@@ -133,6 +134,7 @@
             padding: 60px;
             margin-left: 20px;
             overflow-y: auto;
+            min-width: 0;
         }
 
         h2 {
