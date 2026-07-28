@@ -17,7 +17,7 @@
 
         /* 왼쪽 고정 사이드바 스타일 */
         .sidebar {
-            width: 250px; /* 사이드바 고정 너비 */
+            width: 320px; /* 사이드바 고정 너비 */
             height: 100vh; /* 화면 높이에 꽉 차게 */
             position: sticky; /* 스크롤해도 고정되는 핵심 속성 */
             top: 0; /* 화면 상단에 붙임 */
@@ -76,7 +76,7 @@
         .main-content {
             flex: 1;
             padding: 60px;
-            margin-left: 20px;
+            margin-left: 30px;
             overflow-y: auto;
         }
 
@@ -112,6 +112,24 @@
             text-decoration: underline;
         }
 
+        
+    .affiliation {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.affiliation-line {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.affiliation-line:first-child {
+    white-space: nowrap;
+}
     </style>
 </head>
 <body>
@@ -120,8 +138,15 @@
     <div class="sidebar">
         <img src="jiyoung_photo.png" alt="Jiyoung Lee" class="profile-img">
         <div class="name">Jiyoung Lee</div>
-        <span class="affiliation-line">Ph.D. Candidate in Economics, University of Washington</span>
-        <span class="affiliation-line">Junior Economist, Bank of Korea (on leave)</span>
+        <div class="affiliation">
+        <span class="affiliation-line">
+        Ph.D. Candidate in Economics, University of Washington
+        </span>
+        <span class="affiliation-line">
+        Junior Economist, Bank of Korea (on leave)
+        </span>
+    </div>
+
 
         <!-- 이메일 및 링크디인 아이콘 -->
         <div class="social-icons">
