@@ -74,16 +74,16 @@
 
         /* 오른쪽 스크롤 콘텐츠 스타일 */
         .main-content {
-            flex: 1; /* 남은 공간을 모두 차지함 */
+            flex: 1;
             padding: 60px;
-            margin-left: 20px; /* 사이드바와의 간격 */
-            overflow-y: auto; /* 내용이 길어지면 스크롤 생성 */
+            margin-left: 20px;
+            overflow-y: auto;
         }
 
         h2 {
             border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-            margin-top: 40px;
+            padding-bottom: 8px;
+            margin-top: 25px; /* 기존 40px에서 간격을 줄임 */
             font-size: 20px;
         }
         
@@ -99,12 +99,14 @@
         .abstract {
             font-style: italic;
             color: #555;
-            margin-bottom: 15px;
+            margin-bottom: 8px; /* 추상문과 다운로드 링크 사이 간격 축소 */
         }
         
         .download-link {
             color: #0056b3;
             text-decoration: none;
+            display: inline-block;
+            margin-bottom: 15px; /* 다운로드 링크 아래 간격 추가하여 다음 섹션과 분리 */
         }
         .download-link:hover {
             text-decoration: underline;
@@ -116,18 +118,32 @@
 
     <!-- 왼쪽 고정 영역 -->
 <div class="sidebar">
-    <img src="jiyoung_photo.png" alt="Jiyoung Lee" class="profile-img">
-    <div class="name">Jiyoung Lee</div>
-    <span class="affiliation-line">Ph.D. Candidate in Economics, University of Washington</span>
-    <span class="affiliation-line">Junior Economist, Bank of Korea (on leave)</span>
+        <img src="jiyoung_photo.png" alt="Jiyoung Lee" class="profile-img">
+        <div class="name">Jiyoung Lee</div>
+        <span class="affiliation-line">Ph.D. Candidate in Economics, University of Washington</span>
+        <span class="affiliation-line">Junior Economist, Bank of Korea (on leave)</span>
 
-    <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#jobmarketpaper">Job Market Paper</a></li>
-        <li><a href="#workingpapers">Working Papers</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</div>
+        <!-- 이메일 및 링크디인 아이콘 영역 -->
+        <div class="social-icons">
+            <a href="mailto:jylee269@uw.edu" title="Email">
+                <!-- Email SVG 아이콘 -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/본인링크디인아이디" target="_blank" title="LinkedIn">
+                <!-- LinkedIn SVG 아이콘 -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+        </div>
+
+        <!-- 클릭 가능한 목차 영역 -->
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#jobmarketpaper">Job Market Paper</a></li>
+            <li><a href="#workingpapers">Working Papers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    
 
     <!-- 오른쪽 스크롤 영역 -->
     <div class="main-content">
@@ -150,7 +166,7 @@
 
         <div class="paper-title">"War and Macro"</div>
         <div class="abstract">Abstract: We develop a dynamic, stochastic, general equilibrium model of war and macroeconomic dynamics. In our model, Home is at war with Foreign. The population of each country is split between the army and civilians. Each army has access to a stock of weapons. Civilians provide labor for production of new weapons or of goods. These can be consumed or invested to accumulate capital that will be used in future goods or weapons production. In each country, a planner allocates civilian and military resources with the goal of winning the war. This happens when one of the following outcomes materializes:\ The opponent's army or stock of weapons fall below certain thresholds, or consumption or civilian population in the opponent country fall below certain thresholds. We interpret the latter outcomes as situations in which a country loses the war because of loss of political support for it. The rest of the world can affect the outcome of the war by providing weapons aid to one of the countries or imposing sanctions on the other. Starting from a situation of lull in the war, we study the consequences of events that upset the balance and result in one or the other country winning the war. Possible events include changes in military efficiency (the ability of an army to inflict losses in an offensive or to defend against attack), changes in productivity in weapons or goods production, injections of reinforcements, and changes in the allocation of civilian labor to weapons versus goods production, goods output to consumption versus investment, and/or investment in capital for weapons or goods production. We study several possible scenarios taking these events as exogenous and then move on to the situation in which instruments of war and economy management are optimally determined by forward-looking planners.</div>
-        <a href="#" class="download-link">[Work in progress]</a>
+        <div class="download-link" style="color: #555; font-style: italic;">Draft available upon request</div> 
 
         <h2 id="contact">Contact</h2>
         <p>Email: <a href="mailto:jylee269@uw.edu" class="download-link">jylee269@uw.edu</a></p>
