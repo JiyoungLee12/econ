@@ -116,7 +116,8 @@
     .affiliation {
     width: 100%;
     text-align: left;
-    margin-bottom: 20px;
+    margin-top: 15px;    /* 이름과의 간격(간격이라고 적어두신 부분) 조정 */
+    margin-bottom: 15px; /* 소셜 아이콘과의 간격 */
     font-size: 14px;
     color: #666;
     line-height: 1.5;
@@ -176,6 +177,24 @@ details[open] summary {
 .paper-meta a:hover{
     text-decoration:underline;
 }
+
+.social-icons {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 25px; /* 내림차순 메뉴와의 간격 */
+    display: flex;
+    gap: 12px;           /* 아이콘 사이 간격 */
+}
+
+.social-icons a {
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
     </style>
 </head>
 <body>
@@ -184,17 +203,8 @@ details[open] summary {
     <div class="sidebar">
         <img src="jiyoung_photo.png" alt="Jiyoung Lee" class="profile-img">
         <div class="name">Jiyoung Lee</div>
-        <div class="affiliation">
-        <span class="affiliation-line">
-        Ph.D. Candidate in Economics, <br> University of Washington
-        </span>
-        <span class="affiliation-line">
-        Junior Economist, Bank of Korea <br> (on leave)
-        </span>
-    </div>
 
-
-        <!-- 이메일 및 링크디인 아이콘 -->
+        <!-- 아이콘을 이름 바로 밑으로 이동 -->
         <div class="social-icons">
             <a href="mailto:jylee269@uw.edu" title="Email">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -202,6 +212,16 @@ details[open] summary {
             <a href="https://www.linkedin.com/in/jiyounglee269" target="_blank" title="LinkedIn">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
+        </div>
+
+        <!-- Ph.D. Candidate in Economics가 한 줄로 나오도록 <br> 제거 및 구획 정리 -->
+        <div class="affiliation">
+            <span class="affiliation-line">
+                Ph.D. Candidate in Economics,<br>University of Washington
+            </span>
+            <span class="affiliation-line" style="margin-top: 10px;">
+                Junior Economist, Bank of Korea<br>(on leave)
+            </span>
         </div>
 
         <ul class="nav-links">
