@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jiyoung Lee | Job Market Candidate</title>
     <style>
+        /* 부드러운 스크롤 이동 효과 */
+        html {
+            scroll-behavior: smooth;
+        }
+
         /* 기본 페이지 설정 */
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -29,6 +34,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            overflow-y: auto;
         }
 
         .profile-img {
@@ -68,7 +74,7 @@
             display: flex;
             justify-content: flex-start;
             gap: 15px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .social-icons a {
@@ -96,22 +102,23 @@
             margin-bottom: 8px;
         }
 
+        /* 사이드바 목차(네비게이션) 스타일 */
         .nav-links {
             list-style: none;
             padding: 0;
-            margin-top: auto;
+            margin-top: 20px;
             width: 100%;
             text-align: left;
         }
 
         .nav-links li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: #333;
-            font-size: 15px;
+            color: #555;
+            font-size: 14px;
         }
         
         .nav-links a:hover {
@@ -226,7 +233,7 @@
 </head>
 <body>
 
-    <!-- 왼쪽 고정 영역 -->
+    <!-- 왼쪽 고정 영역 (프로필 및 목차) -->
     <div class="sidebar">
         <img src="jiyoung_photo.png" alt="Jiyoung Lee" class="profile-img">
         <div class="name" style="width: 100%; text-align: left;">Jiyoung Lee</div>
@@ -257,10 +264,21 @@
                 </svg>
             </a>
         </div>
+
+        <!-- 사이드바 목차 (클릭 시 해당 위치로 이동) -->
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#jobmarketpaper">Job Market Paper</a></li>
+            <li><a href="#workingpapers">Working Papers</a></li>
+            <li><a href="#workinprogress">Work in Progress</a></li>
+            <li><a href="#teaching">Teaching Experience</a></li>
+            <li><a href="#research">Research Experience</a></li>
+            <li><a href="#policypapers">Policy Papers</a></li>
+        </ul>
     </div>
     
 
-    <!-- 오른쪽 스크롤 영역 -->
+    <!-- 오른쪽 스크롤 콘텐츠 영역 -->
     <div class="main-content">
         
         <h2 id="about">About</h2>
@@ -286,14 +304,14 @@
 
         <div class="paper-meta">
             <strong>Presentations:</strong><br>
-            • <a href="https://www.kielinstitut.de/fileadmin/Dateiverwaltung/Events/_texte_other_events/invito-IEP-CEPR-KIEL10JUNE2026-3.pdf" target="_blank">CEPR-Kiel-Bocconi Best Paper Award Finalist: 2nd Junior Workshop in Geoeconomics (Bocconi University)</a><br>
-            • <a href="https://virtual.oxfordabstracts.com/event/76093/program?date=%222026-7-7%22&g_session=188638" target="_blank">2026 Royal Economic Society Annual Conference (University of Newcastle)</a><br>
-            • <a href="https://editorialexpress.com/conference/CefESConf2026/program/CefESConf2026.html#26" target="_blank">The 8th Annual CefES Conference (ETH Zürich)</a><br>
-            • <span>The 3rd Workshop of the East and South-East Asian Macroeconomic Society (HKUST, scheduled)</span><br>
+            • CEPR-Kiel-Bocconi Best Paper Award Finalist: 2nd Junior Workshop in Geoeconomics (Bocconi University)<br>
+            • 2026 Royal Economic Society Annual Conference (University of Newcastle)<br>
+            • The 8th Annual CefES Conference (ETH Zürich)<br>
+            • The 3rd Workshop of the East and South-East Asian Macroeconomic Society (HKUST, scheduled)<br>
         
            <strong>Awards:</strong><br>
-           • <a href="https://res.org.uk/event-listing/res-2026-annual-conference/scholars-fund/" target="_blank">RES 2026 Annual Conference: Scholars Fund — Rated Excellent by the Committee, Royal Economic Society</a> <br>
-           • <span>Henry T. Buechel Memorial Fellowship, University of Washington</span><br>
+           • RES 2026 Annual Conference: Scholars Fund — Rated Excellent by the Committee, Royal Economic Society<br>
+           • Henry T. Buechel Memorial Fellowship, University of Washington<br>
         </div>
 
 
@@ -316,11 +334,11 @@
 
         <div class="paper-meta">
             <strong>Presentations:</strong><br>
-            • <a href="https://economics.smu.edu.sg/sites/economics.smu.edu.sg/files/economics/Events/Trade%20Conf%202026/Detailed%20Program%20-%20Trade%20Conference%20v15.pdf" target="_blank">2026 SMU Trade Conference (Singapore Management University)</a><br>
-            • <a href="https://www.fiw.ac.at/wp-content/uploads/2026/02/2026_FIW_Conference_Program-1.pdf" target="_blank">The 18th FIW Research Conference "International Economics" (WU Vienna)</a><br>
-            • <a href="https://sites.google.com/view/hecon/program?authuser=0" target="_blank">HEC Paris Economics PhD Conference (HEC Paris; <i>Top 7% Selection</i>)</a><br>
-            • <span>Boston College 2nd PhD Conference (Boston College)</span><br>
-            • <a href="https://sites.google.com/view/phd-evs2020/past-presentations?authuser=0" target="_blank">PhD-EVS</a><br>
+            • 2026 SMU Trade Conference (Singapore Management University)<br>
+            • The 18th FIW Research Conference "International Economics" (WU Vienna)<br>
+            • HEC Paris Economics PhD Conference (HEC Paris; <i>Top 7% Selection</i>)<br>
+            • Boston College 2nd PhD Conference (Boston College)<br>
+            • PhD-EVS<br>
         </div>
 
         <!-- 두 번째 Working Paper (Co-authored) -->
@@ -339,13 +357,41 @@
         </div>
 
         <!-- Work in Progress 섹션 -->
-        <h2 id="workinprogress" style="margin-top: 40px;">Work in Progress</h2>
-
+        <h2 id="workinprogress">Work in Progress</h2>
         <div class="paper-header" style="margin-top: 15px;">
             <div class="paper-title">AI and Trade <span style="font-size: 13px; font-weight: normal; color: #666;">(with Sangwoo Park)</span></div>
             <div class="paper-actions">
                 <span style="color: #777; font-style: italic; font-size: 14px;">Draft upon request</span>
             </div>
+        </div>
+
+        <!-- Teaching Experience 섹션 -->
+        <h2 id="teaching">Teaching Experience</h2>
+        <div class="paper-meta">
+            <strong>Overall Mean Evaluation:</strong> 4.8 / 5.0<br><br>
+            • <strong>Intermediate Macroeconomics</strong> (Undergraduate, ×2) — 2026 Spring<br>
+            • <strong>Introductory Macroeconomics</strong> (Undergraduate, ×6) — 2023 – 2026<br>
+            • <strong>Introductory Microeconomics</strong> (Undergraduate, ×2) — 2025<br>
+        </div>
+
+        <!-- Research Experience 섹션 -->
+        <h2 id="research">Research Experience</h2>
+        <div class="paper-meta">
+            • <strong>Research Assistant to Professor Fabio Ghironi</strong> (2025 – 2026)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;– Project: <em>"International Trade and Macroeconomic Dynamics with Sanctions"</em> (NSF Award No. 2317089)
+        </div>
+
+        <!-- Policy Papers 섹션 -->
+        <h2 id="policypapers">Policy Papers</h2>
+        <div class="paper-meta">
+            • <strong>Implications of Financial Support for SMEs after COVID-19: Focus on the Busan Area</strong> (2020)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;– <em>Golden Book, Best Regional Working Paper Place, Bank of Korea</em><br>
+            • <strong>Comparison Between COVID-19 and Past Crises</strong> (2020)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;– <em>Golden Book, Best Regional Working Paper Place, Bank of Korea</em><br>
+            • <strong>Recent Housing Consumption Behavior of the Baby Boomer Generation and Its Implications</strong> (2017)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;– <em>Monthly Bulletin, Bank of Korea</em><br>
+            • <strong>Using Microdata to Reinterpret the Effect of Inflation Expectations on Consumption</strong> (2016)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;– <em>2nd Thesis Prize, Bank of Korea Young Economist Research Paper Competition (co-authored)</em>
         </div>
 
         <div style="height: 300px;"></div>
