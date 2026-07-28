@@ -27,7 +27,7 @@
             position: sticky;
             top: 0;
             background-color: #ffffff;
-            padding: 40px;
+            padding: 35px 30px;
             box-sizing: border-box;
             border-right: 1px solid #eee;
             display: flex;
@@ -38,8 +38,8 @@
         }
 
         .profile-img {
-            width: 170px;
-            height: 170px;
+            width: 160px;
+            height: 160px;
             object-fit: cover;
             border-radius: 6px;
         }
@@ -47,8 +47,8 @@
         .name {
             font-size: 20px;
             font-weight: bold;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 12px;
+            margin-bottom: 12px;
         }
 
         /* 연락처(이메일) 영역 스타일 (왼쪽 정렬) */
@@ -60,7 +60,7 @@
             gap: 8px;
             font-size: 14px;
             color: #333;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .contact-info svg {
@@ -74,7 +74,7 @@
             display: flex;
             justify-content: flex-start;
             gap: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .social-icons a {
@@ -90,8 +90,8 @@
         .affiliation {
             width: 100%;
             text-align: left;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin-top: 5px;
+            margin-bottom: 15px;
             font-size: 14px;
             color: #666;
             line-height: 1.5;
@@ -99,20 +99,21 @@
 
         .affiliation-line {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
-        /* 사이드바 목차(네비게이션) 스타일 */
+        /* 사이드바 목차(네비게이션) 스타일 - 간격을 좁히고 아래로 배치 */
         .nav-links {
             list-style: none;
             padding: 0;
-            margin-top: 20px;
+            margin-top: auto; /* 아래쪽으로 밀어냄 */
+            margin-bottom: 10px;
             width: 100%;
             text-align: left;
         }
 
         .nav-links li {
-            margin-bottom: 8px;
+            margin-bottom: 4px; /* 목차 항목 사이 간격을 좁게 수정 */
         }
 
         .nav-links a {
@@ -242,7 +243,7 @@
             <span class="affiliation-line">
                 <strong>Ph.D. Candidate in Economics,</strong><br>University of Washington
             </span>
-            <span class="affiliation-line" style="margin-top: 12px;">
+            <span class="affiliation-line" style="margin-top: 10px;">
                 <strong>Junior Economist, Bank of Korea</strong><br>(on leave)
             </span>
         </div>
@@ -365,6 +366,17 @@
             </div>
         </div>
 
+        <!-- Teaching Experience 섹션 -->
+        <h2 id="teaching">Teaching Experience</h2>
+        <div class="paper-meta">
+            <strong>Overall Mean Evaluation:</strong> 4.8 / 5.0<br>
+            • <strong>Intermediate Macroeconomics</strong> (Undergraduate, ×2) — 2026 Spring<br>
+            • <strong>Introductory Macroeconomics</strong> (Undergraduate, ×6) — 2023 ~ 2026<br>
+            • <strong>Introductory Microeconomics</strong> (Undergraduate, ×2) — 2025<br>
+            <br>
+            <strong>Award:</strong><br>
+            • The Steven Langton Teaching Award, University of Washington
+        </div>
 
         <!-- Research Experience 섹션 -->
         <h2 id="research">Research Experience</h2>
@@ -383,27 +395,13 @@
             • <strong>Recent Housing Consumption Behavior of the Baby Boomer Generation and Its Implications</strong> (2017)<br>
             &nbsp;&nbsp;&nbsp;&nbsp;– <em>Monthly Bulletin, Bank of Korea</em><br>
             • <strong>Using Microdata to Reinterpret the Effect of Inflation Expectations on Consumption</strong> (2016)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;– <em>2nd Thesis Prize, Bank of Korea Young Economist Research Paper Competition (co-authored with Heewan Jeong and Youngchul Yoo)</em>
-            • <strong>Inflation Target for 2016 Onwards, Inflation Report, Bank of Korea</strong> (2016)<br>
-            • <strong>Current Status and Implications of the Infltaion Targeting Countries, Inflation Report, Bank of Korea</strong> (2016)<br>
-            
+            &nbsp;&nbsp;&nbsp;&nbsp;– <em>2nd Thesis Prize, Bank of Korea Young Economist Research Paper Competition (co-authored with Heewan Jeong and Youngchul Yoo)</em><br>
+            • <strong>Inflation Target for 2016 Onwards</strong>, Inflation Report, Bank of Korea (2016)<br>
+            • <strong>Current Status and Implications of the Inflation Targeting Countries</strong>, Inflation Report, Bank of Korea (2016)
         </div>
 
         <div style="height: 300px;"></div>
     </div>
-
-    <!-- Teaching Experience 섹션 -->
-        <h2 id="teaching">Teaching Experience</h2>
-        <div class="paper-meta">
-            <strong>Overall Mean Evaluation:</strong> 4.8 / 5.0<br>
-            • <strong>Intermediate Macroeconomics</strong> (Undergraduate, ×2) — 2026 Spring<br>
-            • <strong>Introductory Macroeconomics</strong> (Undergraduate, ×6) — 2023 ~ 2026<br>
-            • <strong>Introductory Microeconomics</strong> (Undergraduate, ×2) — 2025<br>
-        </div>
-        <div class="paper-meta">        
-           <strong>Award:</strong><br>
-           • The Steven Langton Teaching Award, University of Washington<br>
-        </div>
 
 </body>
 </html>
