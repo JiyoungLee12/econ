@@ -171,20 +171,23 @@
         .paper-actions details {
             display: inline-block;
         }
+        
+.paper-actions summary,
+.paper-actions a {
+    color: #0056b3;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
 
-        .paper-actions summary {
-            color: #0056b3;
-            cursor: pointer;
-            list-style: none;
-        }
+.paper-actions summary::-webkit-details-marker {
+    display: none;
+}
 
-        .paper-actions summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .paper-actions summary:hover {
-            text-decoration: underline;
-        }
+.paper-actions summary:hover,
+.paper-actions a:hover {
+    text-decoration: underline;
+}
 
         .paper-link {
             color: #0056b3;
