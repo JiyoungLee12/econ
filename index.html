@@ -246,6 +246,95 @@
     justify-content: space-between;
     align-items: center;
 }
+        @media (max-width: 768px) {
+    body {
+        display: block;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* 왼쪽 사이드바를 상단 프로필 영역으로 변경 */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        position: relative;
+        top: auto;
+        padding: 20px 16px;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        overflow: visible;
+    }
+
+    /* 모바일에서는 프로필 사진 크기를 조금 줄임 */
+    .profile-img {
+        width: 120px;
+        height: 145px;
+        object-fit: cover;
+    }
+
+    .name {
+        font-size: 19px;
+    }
+
+    /* 목차를 가로로 스크롤할 수 있게 */
+    .nav-links {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 18px;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-top: 16px;
+        margin-bottom: 0;
+        padding: 8px 0;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-links li {
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+
+    /* 본문이 휴대폰 너비에 맞도록 조정 */
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 24px 18px;
+        margin-left: 0;
+        overflow: visible;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-top: 32px;
+        scroll-margin-top: 16px;
+    }
+
+    .paper-header {
+        gap: 6px;
+    }
+
+    .paper-title {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .paper-actions {
+        flex-wrap: wrap;
+    }
+
+    .abstract-box {
+        padding: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .paper-meta {
+        overflow-wrap: anywhere;
+    }
+}
     </style>
 
     
