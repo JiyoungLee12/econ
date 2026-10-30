@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
         html {
             scroll-behavior: smooth;
         }
-
+ 
         /* 기본 페이지 설정 */
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -19,7 +19,7 @@
             color: #333;
             line-height: 1.6;
         }
-
+ 
         /* 왼쪽 고정 사이드바 스타일 */
         .sidebar {
             width: 310px;
@@ -37,21 +37,21 @@
             overflow-y: auto;
             flex-shrink: 0;
         }
-
+ 
         .profile-img {
             width: 210px;
             height: 230px;
             object-fit: cover;
             border-radius: 6px;
         }
-
+ 
         .name {
             font-size: 20px;
             font-weight: bold;
             margin-top: 12px;
             margin-bottom: 12px;
         }
-
+ 
         /* 연락처(이메일) 영역 스타일 (왼쪽 정렬) */
         .contact-info {
             width: 100%;
@@ -63,12 +63,12 @@
             color: #333;
             margin-bottom: 10px;
         }
-
+ 
         .contact-info svg {
             color: #555;
             flex-shrink: 0;
         }
-
+ 
         /* 소셜 아이콘 영역 (왼쪽 정렬) */
         .social-icons {
             width: 100%;
@@ -77,17 +77,17 @@
             gap: 15px;
             margin-bottom: 15px;
         }
-
+ 
         .social-icons a {
             color: #333;
             display: inline-flex;
             align-items: center;
         }
-
+ 
         .social-icons a:hover {
             color: #0056b3;
         }
-
+ 
         .affiliation {
             width: 100%;
             text-align: left;
@@ -97,12 +97,12 @@
             color: #666;
             line-height: 1.5;
         }
-
+ 
         .affiliation-line {
             display: block;
             margin-bottom: 6px;
         }
-
+ 
         /* 사이드바 목차(네비게이션) 스타일 - 간격을 좁히고 아래로 배치 */
         .nav-links {
             list-style: none;
@@ -112,12 +112,12 @@
             width: 100%;
             text-align: left;
         }
-
+ 
         .nav-links li {
-         margin-bottom: 3;       /* 4px → 0 */
+         margin-bottom: 3px;
          line-height: 1.5;      /* 추가 */
         }
-
+ 
         .nav-links a {
             text-decoration: none;
             color: #555;
@@ -128,7 +128,7 @@
             color: #0056b3;
             text-decoration: underline;
         }
-
+ 
         /* 오른쪽 스크롤 콘텐츠 스타일 */
         .main-content {
             flex: 1;
@@ -137,7 +137,7 @@
             overflow-y: auto;
             min-width: 0;
         }
-
+ 
        h2 {
             border-bottom: 1px solid #cccccc; 
             padding-bottom: 8px;
@@ -148,7 +148,7 @@
         h2:first-child {
             margin-top: 0;
         }
-
+ 
         /* 논문 제목 및 링크 행 정렬 */
         .paper-header {
             display: flex;
@@ -157,18 +157,18 @@
             flex-wrap: wrap;
             margin-bottom: 5px;
         }
-
+ 
         .paper-title {
             font-weight: bold;
             font-size: 16px;
         }
-
+ 
         .paper-actions {
             font-size: 14px;
             display: flex;
             gap: 8px;
         }
-
+ 
         .paper-actions details {
             display: inline-block;
         }
@@ -180,25 +180,25 @@
     list-style: none;
     text-decoration: none;
 }
-
+ 
 .paper-actions summary::-webkit-details-marker {
     display: none;
 }
-
+ 
 .paper-actions summary:hover,
 .paper-actions a:hover {
     text-decoration: underline;
 }
-
+ 
         .paper-link {
             color: #0056b3;
             text-decoration: none;
         }
-
+ 
         .paper-link:hover {
             text-decoration: underline;
         }
-
+ 
         /* Abstract 펼쳐지는 영역 스타일 */
         .abstract-box {
             font-style: italic;
@@ -220,28 +220,62 @@
         .download-link:hover {
             text-decoration: underline;
         }
-
+ 
         .paper-meta {
             margin: 8px 0 20px 0;
             font-size: 14px;
             line-height: 1.6;
             color: #555;
         }
-
+ 
         .paper-meta a {
             color: #0056b3;
             text-decoration: none;
         }
-
+ 
         .paper-meta a:hover {
             text-decoration: underline;
         }
-
+ 
         /* Presentations와 Awards 들여쓰기 설정 */
         .indent-item {
             padding-left: 10px;
         }
-
+ 
+        /* 수상 배지 (JMP 제목 아래) */
+        .badge {
+            display: inline-block;
+            font-size: 13px;
+            color: #7a5200;
+            background-color: #fff6e0;
+            border: 1px solid #f0d9a8;
+            border-radius: 4px;
+            padding: 2px 8px;
+            margin: 2px 0 6px 0;
+        }
+ 
+        /* Employment 세부 설명 */
+        .job-detail {
+            display: block;
+            padding-left: 22px;
+            margin-bottom: 6px;
+        }
+ 
+        /* References 카드 */
+        .ref-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 18px;
+            margin-top: 12px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+ 
+        .ref-grid strong {
+            color: #333;
+        }
+ 
         .teaching-header {
     display: flex;
     justify-content: space-between;
@@ -253,7 +287,7 @@
         width: 100%;
         overflow-x: hidden;
     }
-
+ 
     /* 왼쪽 사이드바를 상단 프로필 영역으로 변경 */
     .sidebar {
         width: 100%;
@@ -266,18 +300,18 @@
         border-bottom: 1px solid #eee;
         overflow: visible;
     }
-
+ 
     /* 모바일에서는 프로필 사진 크기를 조금 줄임 */
     .profile-img {
         width: 130px;
         height: 150px;
         object-fit: cover;
     }
-
+ 
     .name {
         font-size: 19px;
     }
-
+ 
     /* 목차를 가로로 스크롤할 수 있게 */
     .nav-links {
         display: flex;
@@ -292,12 +326,12 @@
         padding: 8px 0;
         -webkit-overflow-scrolling: touch;
     }
-
+ 
     .nav-links li {
         flex-shrink: 0;
         margin-bottom: 0;
     }
-
+ 
     /* 본문이 휴대폰 너비에 맞도록 조정 */
     .main-content {
         width: 100%;
@@ -307,37 +341,37 @@
         margin-left: 0;
         overflow: visible;
     }
-
+ 
     h2 {
         font-size: 18px;
         margin-top: 32px;
         scroll-margin-top: 16px;
     }
-
+ 
     .paper-header {
         gap: 6px;
     }
-
+ 
     .paper-title {
         font-size: 15px;
         overflow-wrap: anywhere;
     }
-
+ 
     .paper-actions {
         flex-wrap: wrap;
     }
-
+ 
     .abstract-box {
         padding: 12px;
         overflow-wrap: anywhere;
     }
-
+ 
     .paper-meta {
         overflow-wrap: anywhere;
     }
 }
     </style>
-
+ 
     
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCK1VLRMXD"></script>
@@ -345,17 +379,17 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+ 
   gtag('config', 'G-FCK1VLRMXD');
 </script>
 </head>
 <body>
-
+ 
     <!-- 왼쪽 고정 영역 (프로필 및 목차) -->
     <div class="sidebar">
         <img src="000JiyoungLee_ss.jpg" alt="Jiyoung Lee" class="profile-img">
         <div class="name">Jiyoung Lee</div>
-
+ 
         <div class="affiliation">
             <span class="affiliation-line">
                 <strong>Ph.D. Candidate in Economics,</strong><br>University of Washington
@@ -364,13 +398,13 @@
                 <strong>Junior Economist, Bank of Korea</strong><br>(on leave)
             </span>
         </div>
-
+ 
         <!-- 이메일 아이콘 + 텍스트 (왼쪽 정렬) -->
         <div class="contact-info">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             <span>jylee269[at]uw[dot]edu</span>
         </div>
-
+ 
         <!-- 소셜 아이콘 영역 (LinkedIn, Twitter 왼쪽 정렬) -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/jiyounglee269" target="_blank" title="LinkedIn">
@@ -382,20 +416,24 @@
                 </svg>
             </a>
         </div>
-
+ 
         <!-- 사이드바 목차 (클릭 시 해당 위치로 이동) -->
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#jobmarketpaper">Job Market Paper</a></li>
             <li><a href="#workingpapers">Working Papers</a></li>
             <li><a href="#workinprogress">Work in Progress</a></li>
+            <li><a href="#honors">Selected Honors</a></li>
             <li><a href="#research">Research Experience</a></li>
             <li><a href="#employment">Employment History</a></li>
             <li><a href="#policypapers">Policy Papers</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#outreach">Educational Outreach</a></li>
+            <li><a href="#references">References</a></li>
         </ul>
     </div>
+    
+ 
     
 
     <!-- 오른쪽 스크롤 콘텐츠 영역 -->
